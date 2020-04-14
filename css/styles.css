@@ -1,0 +1,322 @@
+/*formating table layout*/
+table, table th, table td{
+    font-size: 16px;
+    margin: 5px;
+    border: burlywood 3px solid;
+    padding: 0 20px 0 20px;
+    
+}
+/*container-fluid giver=s full width so not using 
+normal container*/
+.container-fluid{
+     
+    width: 100%;;
+    text-align: center;
+    border: 1px black solid;
+    color: #ffffff;
+    background: url('https://us.123rf.com/450wm/ekina/ekina2003/ekina200322127/141943804-texture-background-pattern-red-satin-is-a-weave-that-usually-has-a-glossy-surface-and-a-dull-back-sa.jpg?ver=6');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+  color: 	#FFDF00;
+  font-weight: bolder;
+}
+#your-score, #bot-score{
+  font-weight: bold;
+}
+/* using that flexbox for the first boc with score and table */
+.blackjack-flexbox-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+     border: 1px black solid;
+     border-radius: 10px;
+     
+    
+}
+
+/*Making sure to add height to the card container and adding flex=1 
+for giving equal width*/
+.blackjack-flexbox-1 div {
+  text-align: center;
+  flex:1;
+  overflow: hidden;
+  height: 423px;
+  background-image: url(' https://image.freepik.com/free-vector/poker-table-background-green-color_47243-1073.jpg')  ;
+
+}
+/*making the image appending smaller so it doesnt covers the whole screen*/
+.blackjack-flexbox-1 img{
+  height: 45%;
+  padding: 30px;
+  border-radius:40px;
+ }
+.blackjack-flexbox-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+     
+     border-radius: 0 0 10px 10px;
+     background: url('https://image.shutterstock.com/image-photo/wood-texture-background-260nw-119843326.jpg') center  ;
+     
+    
+}
+
+/* for the container with buttons as I want buttens not with 
+space around justified and with mr-3*/
+.blackjack-flexbox-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   justify-content: center ;
+    padding: 10px;
+    background: url('https://image.shutterstock.com/image-photo/wood-texture-background-260nw-119843326.jpg') center  ;
+    
+    width: auto;
+    border-radius: 10px 10px 0 0;
+
+}
+/*make lets play white background*/
+
+
+.container-fluid h3{
+    background-color:black;
+    padding: 5px;
+    width:20%;
+    margin: 0 auto 2px auto;
+    text-emphasis: bolder;
+    color:#bc13fe;
+    border-radius: 10px;
+    font-weight: 900;
+   
+    
+}
+
+
+
+
+.your-box{
+    border-radius: 10px 0 0 10px;
+}
+.bot-box{
+    border-radius: 0 10px 10px 0;
+}
+
+h2{
+    padding: 5px;
+}
+
+button { 
+    background-image: url('https://img.freepik.com/free-photo/old-grunge-dark-textured-wooden-background-surface-old-brown-wood-texture_7182-333.jpg?size=626&ext=jpg'); 
+    background-size: cover; 
+    width: 130px; 
+    height: 50px;
+    
+} 
+
+#blackjack-hit-button:hover{
+    -webkit-box-shadow: 8px 9px 45px 2px rgba(49,189,170,1);
+    -moz-box-shadow: 8px 9px 45px 2px rgba(49,189,170,1);
+    box-shadow: 8px 9px 45px 2px rgba(49,189,170,1);
+ }
+#blackjack-stand-button:hover{
+    -webkit-box-shadow: 8px 9px 45px 2px rgba(214,206,50,1);
+    -moz-box-shadow: 8px 9px 45px 2px rgba(214,206,50,1);
+    box-shadow: 8px 9px 45px 2px rgba(214,206,50,1);
+}
+#blackjack-deal-button:hover{
+    -webkit-box-shadow: 8px 9px 45px 2px rgba(209,35,105,1);
+    -moz-box-shadow: 8px 9px 45px 2px rgba(209,35,105,1);
+    box-shadow: 8px 9px 45px 2px rgba(209,35,105,1);
+    
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    /* using that flexbox for the first boc with score and table */
+.blackjack-flexbox-1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+     border: 1px black solid;
+     border-radius: 10px;
+     height: 500px;
+    
+}
+.blackjack-flexbox-1 img{
+  height: 39%;
+  padding: 10px;
+  border-radius: 15px;
+  
+}
+  .blackjack-flexbox-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+     border: 1px black solid;
+     border-radius: 10px;
+    
+}
+
+/* for the container with buttons as I want buttens not with 
+space around justified and with mr-3*/
+.blackjack-flexbox-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   justify-content: center ;
+    padding: 10px;
+    border: 1px black solid;
+    background: url('https://image.shutterstock.com/image-photo/wood-texture-background-260nw-119843326.jpg') center  ;
+    
+    width: auto;
+    border-radius: 10px;
+
+}
+/*make lets play white background*/
+.container-fluid h3{
+    background-color:black;
+    padding: 5px;
+    width:50%;
+    height: 50px;
+    margin: 0 auto 2px auto;
+    color:#bc13fe;
+    border-radius: 10px;
+}
+/*Making sure to add height to the card container and adding flex=1 
+for giving equal width*/
+.blackjack-flexbox-1 div {
+    
+    border: 1px black solid;
+    height: 300px;
+    background-image: url(' https://image.freepik.com/free-vector/poker-table-background-green-color_47243-1073.jpg') center ;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+    
+  }
+
+
+
+  /*button animation*/
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.1s ease-out 0.5s both;
+	        animation: scale-up-center 0.1s ease-out 0.5s both;
+}
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  .scale-up-center1 {
+	-webkit-animation: scale-up-center 0.3s ease-out 0.5s both;
+	        animation: scale-up-center 0.3s ease-out 0.5s both;
+}
+
+ @-webkit-keyframes scale-up-center1 {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center1 {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  .scale-up-center2 {
+	-webkit-animation: scale-up-center 0.5s ease-out 0.5s both;
+	        animation: scale-up-center 0.5s ease-out 0.5s both;
+}
+
+ @-webkit-keyframes scale-up-center2 {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center2 {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+  /*ANIMATE TEXT LETS PLAY*/
+  .tracking-in-expand{-webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both}
+  
+
+@-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+
+.scale-in-hor-center{-webkit-animation:scale-in-hor-center .5s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-hor-center .5s cubic-bezier(.25,.46,.45,.94) both}
+
+
+ @-webkit-keyframes scale-in-hor-center{0%{-webkit-transform:scaleX(0);transform:scaleX(0);opacity:1}100%{-webkit-transform:scaleX(1);transform:scaleX(1);opacity:1}}@keyframes scale-in-hor-center{0%{-webkit-transform:scaleX(0);transform:scaleX(0);opacity:1}100%{-webkit-transform:scaleX(1);transform:scaleX(1);opacity:1}}
+
+
+ /*pop up top for lets play*/
+ .text-flicker-in-glow{-webkit-animation:text-flicker-in-glow 4s linear both;animation:text-flicker-in-glow 4s linear both}
+
+
+@-webkit-keyframes text-flicker-in-glow{0%{opacity:0}10%{opacity:0;text-shadow:none}10.1%{opacity:1;text-shadow:none}10.2%{opacity:0;text-shadow:none}20%{opacity:0;text-shadow:none}20.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.25)}20.6%{opacity:0;text-shadow:none}30%{opacity:0;text-shadow:none}30.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}30.5%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}30.6%{opacity:0;text-shadow:none}45%{opacity:0;text-shadow:none}45.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}50%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}55%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}55.1%{opacity:0;text-shadow:none}57%{opacity:0;text-shadow:none}57.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35)}60%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35)}60.1%{opacity:0;text-shadow:none}65%{opacity:0;text-shadow:none}65.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35),0 0 100px rgba(255,255,255,.1)}75%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35),0 0 100px rgba(255,255,255,.1)}75.1%{opacity:0;text-shadow:none}77%{opacity:0;text-shadow:none}77.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.4),0 0 110px rgba(255,255,255,.2),0 0 100px rgba(255,255,255,.1)}85%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.4),0 0 110px rgba(255,255,255,.2),0 0 100px rgba(255,255,255,.1)}85.1%{opacity:0;text-shadow:none}86%{opacity:0;text-shadow:none}86.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1)}100%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1)}}@keyframes text-flicker-in-glow{0%{opacity:0}10%{opacity:0;text-shadow:none}10.1%{opacity:1;text-shadow:none}10.2%{opacity:0;text-shadow:none}20%{opacity:0;text-shadow:none}20.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.25)}20.6%{opacity:0;text-shadow:none}30%{opacity:0;text-shadow:none}30.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}30.5%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}30.6%{opacity:0;text-shadow:none}45%{opacity:0;text-shadow:none}45.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}50%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}55%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}55.1%{opacity:0;text-shadow:none}57%{opacity:0;text-shadow:none}57.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35)}60%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35)}60.1%{opacity:0;text-shadow:none}65%{opacity:0;text-shadow:none}65.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35),0 0 100px rgba(255,255,255,.1)}75%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35),0 0 100px rgba(255,255,255,.1)}75.1%{opacity:0;text-shadow:none}77%{opacity:0;text-shadow:none}77.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.4),0 0 110px rgba(255,255,255,.2),0 0 100px rgba(255,255,255,.1)}85%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.4),0 0 110px rgba(255,255,255,.2),0 0 100px rgba(255,255,255,.1)}85.1%{opacity:0;text-shadow:none}86%{opacity:0;text-shadow:none}86.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1)}100%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1)}}
+
+/*heading*/
+.tracking-in-expand{-webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both}
+@-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+
+/*juggling hit button*/
+.vibrate-1{-webkit-animation:vibrate-1 3s linear 3s reverse both;animation:vibrate-1 .3s linear 3s reverse both}
+
+
+ @-webkit-keyframes vibrate-1{0%{-webkit-transform:translate(0);transform:translate(0)}20%{-webkit-transform:translate(-2px,2px);transform:translate(-2px,2px)}40%{-webkit-transform:translate(-2px,-2px);transform:translate(-2px,-2px)}60%{-webkit-transform:translate(2px,2px);transform:translate(2px,2px)}80%{-webkit-transform:translate(2px,-2px);transform:translate(2px,-2px)}100%{-webkit-transform:translate(0);transform:translate(0)}}@keyframes vibrate-1{0%{-webkit-transform:translate(0);transform:translate(0)}20%{-webkit-transform:translate(-2px,2px);transform:translate(-2px,2px)}40%{-webkit-transform:translate(-2px,-2px);transform:translate(-2px,-2px)}60%{-webkit-transform:translate(2px,2px);transform:translate(2px,2px)}80%{-webkit-transform:translate(2px,-2px);transform:translate(2px,-2px)}100%{-webkit-transform:translate(0);transform:translate(0)}}
+
+ 

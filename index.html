@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+    <head>
+        <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Blackjack game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--APPENDING CSS-->
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <!--Google font-->
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+        <style>
+            body  {
+              font-family: 'Baloo Paaji 2', serif;
+              font-size: 48px;
+            }
+          </style>
+    </head>
+
+
+
+    <body>
+        <!--APPENDING JS-->
+        <script src="js/index.js" async defer></script>
+
+        <!-- the html coode starts from here-->
+        <div class="container-fluid ">
+
+            <h1 class="tracking-in-expand" >Blackjack </h1>
+            <h3><span class="text-flicker-in-glow ">Let's Play</span></h3>
+
+            <div class="blackjack-flexbox-1 scale-in-hor-center">
+                <div id="your-box">
+                    <h2><span >You: </span><span id="your-score">0</span></h2>
+                    
+                </div>
+
+                <div id="bot-box">
+                    <h2><span >Dealer: </span><span id="bot-score">0</span></h2>
+
+                </div>
+
+            </div>
+
+            <div class="blackjack-flexbox-2">
+                <button class="btn btn-dark btn-lg scale-up-center  mr-4" id="blackjack-hit-button">Hit</button>
+                <button class="btn btn-dark btn-lg scale-up-center1 mr-4" id="blackjack-stand-button">Stand</button>
+                <button class="btn btn-dark btn-lg scale-up-center2 mr-4" id="blackjack-deal-button">Deal</button>
+            </div>
+
+            <div class="blackjack-flexbox-3">
+                <table class="scale-up-center" >
+                    <tr class="mr-2">
+                        <th>Win</th>
+                        <th>Loss</th>
+                        <th>Tie</th>
+                        
+                    </tr>
+                    <tr>
+                        <td id="win">0</td>
+                        <td id="losses">0</td>
+                        <td id="tie">0</td>
+                    </tr>
+                    
+
+                </table>
+            </div>
+
+        </div>
+     
+        
+        
+    </body>
+</html>
